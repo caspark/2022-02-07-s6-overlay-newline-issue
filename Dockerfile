@@ -14,7 +14,4 @@ ENTRYPOINT [ "/init" ]
 
 COPY ./s6-overlay/ /etc/s6-overlay/
 
-# uncomment this line to show the bug: only the first line of multiline envvars will show
-# ENV S6_KEEP_ENV=1
-
 CMD ["/command/with-contenv", "sh", "-c", "sleep 1 && echo 'Printing out env from CMD...' && env"]

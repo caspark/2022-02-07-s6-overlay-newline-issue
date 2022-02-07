@@ -1,9 +1,0 @@
-services:
-  sample:
-    build: ./
-    environment:
-      # `: |` is yaml for "preserve newlines" - see https://stackoverflow.com/a/21699210/775982
-      MULTILINE_STRING: |
-        Line 1
-        Line 2
-        Line 3
