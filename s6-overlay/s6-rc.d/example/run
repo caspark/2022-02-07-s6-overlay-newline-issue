@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+echo "Printing out env from oneshot example/run script..."
+/command/with-contenv env
+
+# NB: This should be a oneshot, but I haven't yet figured out how exactly oneshots use execline.
+# So to work around my ignorance, let's keep this a longrun and just sleep here for a long time:
+sleep 9999999
